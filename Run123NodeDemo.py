@@ -38,5 +38,3 @@ gapps = GridAPPSD()
 request = {"configurationType":"CIM Dictionary","parameters":{"model_id":"_C1C3E687-6FFD-C753-582B-632A27E28507"}}
 simulation = Simulation(gapps, run_config_123)
 simulation.start_simulation()
-print(simulation.simulation_id)
-# return simulation.simulation_id
