@@ -1,1 +1,0 @@
-# gridappsd-hackathon
