@@ -1,5 +1,8 @@
 sphinx
 nbsphinx >= 0.8.5
+pandoc
+IPython
+ipykernel
 sphinx-autobuild
 sphinx-rtd-theme
 recommonmark
