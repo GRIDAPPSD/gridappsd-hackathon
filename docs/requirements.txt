@@ -1,6 +1,7 @@
 sphinx
 nbsphinx >= 0.8.5
 pandoc
+py-pandoc
 IPython
 ipykernel
 sphinx-autobuild
