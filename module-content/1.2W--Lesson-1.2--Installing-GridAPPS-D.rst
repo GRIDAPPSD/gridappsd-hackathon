@@ -1,0 +1,103 @@
+=====================
+Installing GridAPPS-D
+=====================
+
+1. Clone the GridAPPS-D Docker repository
+=========================================
+
+Disconnect from your corporate/laboratory VPN (if applicable) and open
+the Ubuntu terminal:
+
+.. figure:: attachment:win_setup_open_ubuntu.png
+   :alt: win_setup_open_ubuntu.png
+
+   win_setup_open_ubuntu.png
+
+Clone the GridAPPS-D repository:
+
+``git clone https://github.com/GRIDAPPSD/gridappsd-docker``
+
+.. figure:: attachment:win_setup_clone_gapps.png
+   :alt: win_setup_clone_gapps.png
+
+   win_setup_clone_gapps.png
+
+--------------
+
+2. Install the GridAPPS-D Docker Containers
+===========================================
+
+Change directories into the **gridappsd-docker** folder and start the
+latest stable release of the GridAPPS-D platform.
+
+-  ``cd gridappsd-docker``
+
+-  ``./run.sh``
+
+
+
+It is possible to specify a particular release tag using the -t option
+and the release tag
+
+-  ``./run.sh -t develop`` - use the ``develop`` branch with latest beta
+   features
+
+-  ``./run.sh -t releases_2021.03.0`` - use the March 2021 release
+
+-  ``./run.sh -t releases_2020.09.0`` - use the September 2020 release
+
+A complete set of release is available in the `associated readthedocs
+page <https://gridappsd.readthedocs.io/en/latest/overview/index.html#release-history>`__
+
+.. figure:: attachment:win_setup_gapps_run.sh.png
+   :alt: win_setup_gapps_run.sh.png
+
+   win_setup_gapps_run.sh.png
+
+Wait for the platform to download the required docker containers. This
+is a very large package and will take several minutes.
+
+.. figure:: attachment:win_setup_pulling_containers.png
+   :alt: win_setup_pulling_containers.png
+
+   win_setup_pulling_containers.png
+
+After the containers have finished downloading, they will automatically
+be created and then launched:
+
+.. figure:: attachment:win_setup_containters_pulled.png
+   :alt: win_setup_containters_pulled.png
+
+   win_setup_containters_pulled.png
+
+--------------
+
+3. Launch the GridAPPS-D Platform
+=================================
+
+When all the containers are running, the terminal will move inside the
+docker enviroment, which has its own internal directories and path.
+
+Start the GridAPPS-D platform inside the docker container by running
+
+``./run-gridappsd.sh``
+
+.. figure:: attachment:win_setup_start_platform.png
+   :alt: win_setup_start_platform.png
+
+   win_setup_start_platform.png
+
+The GridAPPS-D platform is now installed and running.
+
+To confirm, open `localhost:8080 <http://localhost:8080/>`__ to access
+the GridAPPS-D Visualization App:
+
+.. figure:: attachment:localhost8080.png
+   :alt: localhost8080.png
+
+   localhost8080.png
+
+**Congratulations! You have successfully installed the GridAPPS-D
+Platform, and the GridAPPSD-Python development environment!**
+
+--------------

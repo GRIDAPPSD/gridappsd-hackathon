@@ -1,0 +1,38 @@
+==================
+Running GridAPPS-D
+==================
+
+
+
+1. Starting the Platform
+========================
+
+If you are accessing this module after completing the installation steps
+in the previous procedure, then the GridAPPS-D Platform is already
+running.
+
+When you start your machine next time, you will need to start the
+GridAPPS-D Platform again. To do this, change directories into
+``gridappsd-docker`` and run the ``./run.sh`` script
+
+-  ``cd gridappsd-docker``
+-  ``./run.sh`` or ``./run.sh -t release_tag``
+
+
+
+2. Stopping the Platform
+========================
+
+
+
+
+
+3. Restarting the Platform
+==========================
+
+
+
+4. Pulling Updated Containers
+=============================
+
+

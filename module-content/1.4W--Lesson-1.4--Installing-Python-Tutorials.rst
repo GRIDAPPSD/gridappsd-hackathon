@@ -1,0 +1,127 @@
+1.3. Install Git for Windows
+----------------------------
+
+Install git for windows. This package is required to download and run
+the python notebooks.
+
+Open `gitforwindows.org <https://gitforwindows.org/>`__ and download the
+latest version.
+
+Use the installation wizard with the recommended settings to complete
+installation.
+
+.. figure:: attachment:win_setup_install_git.png
+   :alt: win_setup_install_git.png
+
+   win_setup_install_git.png
+
+[`Return to Top <#Table-of-Contents>`__]
+
+1.4. Install Anaconda or Miniconda
+----------------------------------
+
+Download the latest version of the Miniconda from the `Conda.io
+website <https://docs.conda.io/en/latest/miniconda.html>`__:
+
+-  `Python 3.8 for 64-bit
+   Windows <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe>`__
+-  `Python 3.8 for 32-bit
+   Windows <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86.exe>`__
+
+Use the installation wizard with the recommended settings to complete
+installation.
+
+.. figure:: attachment:win_setup_miniconda.png
+   :alt: win_setup_miniconda.png
+
+   win_setup_miniconda.png
+
+After installation is complete, launch the **Anaconda Prompt
+(Miniconda3)** from the Start Menu or by typing ``anaconda`` in the
+Cortana toolbar
+
+.. figure:: attachment:win_setup_launch_miniconda.png
+   :alt: win_setup_launch_miniconda.png
+
+   win_setup_launch_miniconda.png
+
+The miniconda terminal window will open
+
+.. figure:: attachment:win_setup_miniconda_terminal.png
+   :alt: win_setup_miniconda_terminal.png
+
+   win_setup_miniconda_terminal.png
+
+[`Return to Top <#Table-of-Contents>`__]
+
+1.5. Install Jupyter Lab
+------------------------
+
+In the miniconda terminal window, run
+
+``pip install jupyterlab``
+
+to install the Jupyter environment for executing the python notebooks.
+It may take a couple minutes to collect and install all the required
+packages.
+
+.. figure:: attachment:win_setup_install_jupyter.png
+   :alt: win_setup_install_jupyter.png
+
+   win_setup_install_jupyter.png
+
+[`Return to Top <#Table-of-Contents>`__]
+
+1.6. Install GridAPPSD-Python
+-----------------------------
+
+In the Miniconda terminal window, download and install GridAPPSD-Python
+by running
+
+``pip install git+https://github.com/GRIDAPPSD/gridappsd-python.git@develop#egg=gridappsd``
+
+to download the GridAPPSD-Python library and required packages.
+
+.. figure:: attachment:win_setup_install_gapps_python.png
+   :alt: win_setup_install_gapps_python.png
+
+   win_setup_install_gapps_python.png
+
+GridAPPSD-Python and all dependencies should have been automatically
+added to your anaconda path after completion.
+
+[`Return to Top <#Table-of-Contents>`__]
+
+1.7. Download Python Training Notebooks
+---------------------------------------
+
+In the miniconda terminal window, clone the python notebooks by running
+``git clone https://github.com/GRIDAPPSD/gridappsd-hackathon`` to
+download the python training notebooks.
+
+.. figure:: attachment:win_setup_install_notebooks.png
+   :alt: win_setup_install_notebooks.png
+
+   win_setup_install_notebooks.png
+
+By default, the notebooks will be saved in the directory
+``C:\Users\username\gridappsd-hackathon``
+
+Close the miniconda terminal
+
+
+
+
+
+
+
+
+
+
+
+
+If running on a remote server (e.g. AWS cloud or university / laboratory
+server farm), start the notebooks by running
+
+``jupyter notebook --port 8890 --no-browser --ip='0.0.0.0'``
+
