@@ -40,7 +40,8 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
-    'sphinx.ext.githubpages']
+    'sphinx.ext.githubpages',
+    'nbconvert.utils.pandoc']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -52,7 +53,6 @@ exclude_patterns = []
 
 # The master toctree document.
 master_doc = 'index'
-
 
 
 # -- Options for HTML output -------------------------------------------------
